@@ -7,18 +7,26 @@ body{
 
 header{
 	background-color: #171717;
+	overflow: hidden;
+	padding: 20px;
 }
 
 header h1{
 	margin: 0px;
 	color: #D9D9D9;
+	float: left;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	padding-left: 75px;
 }
 
 a{
 	text-decoration: none;
 	color: #D9D9D9;
 }
-
+nav{
+	float: right;
+}
 nav ul{
 	margin: 0;
 	padding: 0;
