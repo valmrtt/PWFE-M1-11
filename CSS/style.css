@@ -12,7 +12,6 @@ header{
 }
 
 header h1{
-	margin: 0px;
 	color: #D9D9D9;
 	float: left;
 	background-image: url(../img/logo.png);
@@ -28,8 +27,6 @@ nav{
 	float: right;
 }
 nav ul{
-	margin: 0;
-	padding: 0;
 	list-style: none;
 }
 
@@ -45,4 +42,20 @@ nav ul li a{
 nav ul li a:hover{
 	background-color: #D9D9D9;
 	color: #171717;
+}
+
+img{
+	display: block;
+	width: 100%
+}
+
+#noticias-destacadas figcaption{
+background-color: #171717;
+padding: 20px;
+}
+
+#noticias-destacadas h2{
+	color: #D9D9D9;
+	font-size: 40px;
+	font-weight: 700;
 }
