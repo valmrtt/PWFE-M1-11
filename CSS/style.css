@@ -3,6 +3,7 @@ body{
 	font-size: 14px;
 	color: #171717;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 header{
@@ -13,10 +14,14 @@ header{
 
 header h1{
 	color: #D9D9D9;
+	font-weight: bold;
+	font-size: 18px;
 	float: left;
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
 	padding-left: 75px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 a{
@@ -25,6 +30,7 @@ a{
 }
 nav{
 	float: right;
+	padding-top: 10px;
 }
 nav ul{
 	list-style: none;
@@ -49,6 +55,19 @@ img{
 	width: 100%
 }
 
+#noticias-destacadas{
+	width: calc(100vw * 3);
+	background-color: #171717;
+	overflow: hidden;
+	position: relative;
+	animation: 15s slider backwards;
+}
+
+#noticias-destacadas figure{
+	width: 100vw;
+	float: left;
+}
+
 #noticias-destacadas figcaption{
 background-color: #171717;
 padding: 20px;
@@ -58,4 +77,15 @@ padding: 20px;
 	color: #D9D9D9;
 	font-size: 40px;
 	font-weight: 700;
+}
+
+/*Animaciones CSS*/
+/*Siempre deben quedar al final del doc*/
+@keyframes slider{
+	0%{ left: 0; }	
+	20%{ left: 0; }
+	40%{ left:-100vw; }
+	60%{ left: -100vw; }
+	80%{ left: -200vw; }
+	100%{ left: -200vw; }
 }
