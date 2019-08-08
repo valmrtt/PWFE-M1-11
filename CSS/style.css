@@ -1,7 +1,8 @@
+/**
 *{
 	outline: dotted 1px red;
 }
-
+**/
 body{
 	font-family: "Arial";
 	font-size: 14px;
@@ -88,14 +89,84 @@ padding: 20px;
 	flex-direction: row;
 	justify-content: space-evenly; /*flex-start, center, flex-end, space-between, space-around, space-evenly*/
 	align-items: center; /*flex-start, center, flex-end, stretch*/
+	padding-bottom: 15px;
+	border-bottom: solid 1px #CCC;
+	margin: 15px;
+}
+
+.noticia:last-child{  /** first-child, nth-of-type(number)**/
+	border:none;
 }
 
 .noticia-img{
 	width: 30%;
+
 }
 
 .noticia-txt{
 	width: 60%;
+
+}
+
+.noticia-txt h3{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.noticia-txt p{
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+#tabla table{
+	margin: auto;
+	width: 60%;
+	margin-bottom: 10px;
+}
+
+#tabla td, 
+#tabla th{
+	padding: 5px;
+	vertical-align: middle;
+}
+
+#tabla th{
+	background-color: red;
+	color: #FFF;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+#tabla td{
+	background-color: #f6f0f0;
+}
+
+#tabla td:nth-of-type(odd){ /**odd=impares, even=pares**/
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+#tabla td:nth-of-type(even) span{
+	font-weight: 600;
+	color: #2194f3;
+
+}
+
+#tabla tr{
+	border-bottom: solid 1px #171717;
+}
+
+#tabla tr:last-child{
+	border: none;
+}
+
+footer{
+	background-color: #171717;
+	color: #d9d9d9;
+	text-align: center;
+	padding: 15px;
 }
 
 
