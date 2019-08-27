@@ -60,6 +60,7 @@ img{
 	width: 100%
 }
 
+/**
 #noticias-destacadas{
 	width: calc(100vw * 3);
 	background-color: #171717;
@@ -77,10 +78,11 @@ img{
 background-color: #171717;
 padding: 20px;
 }
+**/
 
 #noticias-destacadas h2{
 	color: #D9D9D9;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 700;
 }
 
