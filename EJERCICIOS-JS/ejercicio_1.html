@@ -63,18 +63,36 @@
 			*/
 
 			//Introduccion
-			var nombre = prompt("Ingrese nombre: ")
+			//var nombre = prompt("Ingrese nombre: ")
+			var nombre = null
 			var stock =prompt("Ingrese stock: ") 
 			var precio = prompt("Ingrese precio: ")        
 			var disponibilidad = confirm("Disponible?")
 
 			//Nudo
+			stock = parseInt(stock) // <-- Reciclado de variable
 
-			var precioFinal = precio * 1.21
-
-			if( nombre =="" ){    // == para decir que es igual y "" para vacio
+			while( ( nombre = prompt("Ingrese nombre:") ) == "" ){                       // == para decir que es igual y "" para vacio
 				alert("ERROR: El nombre esta vacio")
 			}
+
+			if( stock =="" || stock < 0 || stock > 100 || isNaN(stock) ){
+				alert("ERROR: Ingrese un numero dale no te hagas")
+
+			}
+
+			while ( precio == "" || precio < 0 || isNaN(parseFloat(precio) ) ){
+				alert("ERROR: Ingrese un numero")
+
+				precio = prompt("Reingrese el price, plis")
+			}
+
+			if (disponibilidad == undefined ){
+				alert("ERROR")
+			}
+
+
+			var precioFinal = precio * 1.21
 
 			//var mensaje = "Hay "+stock+" unidades de "+nombre+" que valen "+precio
 			var mensaje = `<p>Hay ${stock} unid. de <strong>${nombre}</strong> que valen ${precioFinal} c/u</p>`
