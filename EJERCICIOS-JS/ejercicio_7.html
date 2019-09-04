@@ -97,6 +97,9 @@
 				let elegida = menu.value
 
 				/* 6) Seleccionar la habitación correspondiente usando un selector dinámico */  //Un selector es todo aquello que nos sirve para identificar un elemento html/css
+				
+				if( elegida == 0)return      // Funcion de salir, no ejecuta el codigo que va despues si no se cumple la var                 
+
 				let habitacionElegida = document.querySelector(`.habitacion-${elegida}`)
 
 				console.log(habitacionElegida)
