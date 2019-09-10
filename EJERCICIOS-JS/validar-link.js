@@ -6,6 +6,7 @@ links.forEach( function (link){                  //<----funcion anonima = no tie
 	           console.log(link)
 
 	           link.onclick = 	function ( e ){                                              
+	           	
 	
 				e.preventDefault()                         
 
