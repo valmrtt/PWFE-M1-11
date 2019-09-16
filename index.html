@@ -235,7 +235,7 @@
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 
-		
+
 		<script>
 			let ajax = new XMLHttpRequest()
 
@@ -250,14 +250,14 @@
 
 				console.log("Despues del parseo:")
 				let usuarios = JSON.parse(ajax.response)
-				console.log( usuarios )                                 //<-- de JSON a Object
+				console.log( datos )                                 //<-- de JSON a Object
 
 			// 3. Procesar los datos
-				usuarios.data.forEach(function(usuario){
+				usuarios.data.forEach(function(item){
 
 			// 4. Hacer uso de los datos individualizados
-				console.log( `Hallo! Ich bin ${usuario.first_name} ${usuario.last_name} und mein email ist ${usuario.email}`)
-
+				//console.log( `Hallo! Ich bin ${usuario.first_name} ${usuario.last_name} und mein email ist ${usuario.email}`)
+				console.log(`Noticia del dia: ${item.titulo} de ${item.autor}`)
 				})
 
 
